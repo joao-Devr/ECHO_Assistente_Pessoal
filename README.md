@@ -32,7 +32,7 @@
 
 Alternar entre abas, abrir pastas, iniciar ferramentas — tarefas simples que interrompem o fluxo de trabalho dezenas de vezes por dia. O **E.C.H.O.** elimina essa fricção.
 
-Desenvolvido para **Windows 11**, o assistente escuta continuamente o microfone em uma thread dedicada, detecta a wake word **"echo"** seguida de um perfil de contexto (como `"trabalhar"` ou `"estudar"`) e executa automaticamente o conjunto de aplicativos e URLs correspondente — tudo sem tirar as mãos do teclado.
+Desenvolvido para **Windows 11**, o assistente escuta continuamente o microfone em uma thread dedicada, detecta a activation word **"echo"** seguida de um perfil de contexto (como `"trabalhar"` ou `"estudar"`) e executa automaticamente o conjunto de aplicativos e URLs correspondente — tudo sem tirar as mãos do teclado.
 
 O sistema foi construído com foco em **baixo consumo de CPU**, calibração automática de ruído ambiente e proteção de dados pessoais via variáveis de ambiente.
 
@@ -58,7 +58,7 @@ O sistema foi construído com foco em **baixo consumo de CPU**, calibração aut
 
 - 🎤 **Escuta contínua com VAD simples** — captura blocos de áudio de 4s e descarta silêncio automaticamente com base em um gate calculado pela calibração de ruído ambiente
 - 🔊 **Calibração automática de ruído** — ao iniciar, o sistema grava 2s de ambiente e ajusta o limiar de detecção dinamicamente
-- 🗣️ **Wake word + perfil em uma única frase** — basta dizer *"echo, trabalhar"* para disparar o protocolo correspondente
+- 🗣️ **Activation word + perfil em uma única frase** — basta dizer *"echo, trabalhar"* para disparar o protocolo correspondente
 - ⚙️ **Perfis de automação configuráveis:**
   - `trabalhar` → Abre VS Code + pasta no Explorer
   - `estudar` → Abre o portal acadêmico no Chrome com perfil específico

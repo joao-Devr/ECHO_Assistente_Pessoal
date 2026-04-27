@@ -42,7 +42,7 @@ VOICE_LANGUAGE  = "pt-BR"
 VOICE_SAMPLE_RATE    = 44100
  
 # Duração de cada "escuta" em segundos — o microfone grava blocos de 4s por vez
-VOICE_CHUNK_SEC      = 3
+VOICE_CHUNK_SEC      = 4
  
 # Limiar mínimo de volume para considerar que há fala — filtra ruído ambiente
 VOICE_SILENCE_THRESH = 0.01
@@ -166,7 +166,7 @@ def speech_detector():
       2. Verifica se o volume passa do limiar (filtra silêncio)
       3. Converte o áudio para o formato do speech_recognition
       4. Transcreve com a API do Google
-      5. Verifica wake word + perfil no texto transcrito
+      5. Verifica activation word + perfil no texto transcrito
       6. Dispara execute_echo em nova thread se encontrar correspondência
     """
 
