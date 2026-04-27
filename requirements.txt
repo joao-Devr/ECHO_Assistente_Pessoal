@@ -1,0 +1,4 @@
+speechrecognition
+numpy
+sounddevice
+python-dotenv
